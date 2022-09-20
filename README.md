@@ -1,3 +1,4 @@
 # Prototipo_formulario_prueba_tecnica
- 
-EJECUTAR sudo chmod 777 html_c/
+
+# Para iniciar:
+EJECUTAR comando sudo chmod 777 html_c/
