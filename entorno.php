@@ -15,7 +15,7 @@ $notierror 	= 1;
 
 /* CONFIGURACION BASE DE DATOS PRINCIPAL*/
 $hostbd = "LOCALHOST:1521/xe";
-$tipo_server = "oracle";
+$tipo_server = "mysql";
 $connection_string = $hostbd;
 $userbd_oci = 'PRUEBAS';
 $passwd_oci = 'tkoxmtiymtk';
