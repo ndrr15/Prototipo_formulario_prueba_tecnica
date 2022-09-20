@@ -2,19 +2,27 @@
 class conexion
 {
     public $ln = false;
-    public $userbd;
-    public $passwd;
-    public $hostbd;
     public $conectado = false;
     public $tipo_server;
-    public function __construct($userbd, $passwd, $hostbd,  $tipo)
+    public $servidor;
+    public $puerto;
+    public $basedatos;
+    public $usuario;
+    public $password;
+
+    //Metodos
+    // Constructor
+    public function __construct($serv, $usuario, $pw, $bd = "", $tipo, $puerto = "")
     {
         $this->tipo_server = $tipo;
-        $this->hostbd = $hostbd;
-        $this->userbd = $userbd;
-        $this->passwd = $passwd;
+        $this->servidor = $serv;
+        $this->puerto = $puerto;
+        $this->usuario = $usuario;
+        $this->password = $pw;
+        $this->basedatos = $bd;
         $this->conectar();
     }
+
     public function conectar()
     {
         if ($this->tipo_server == "mysql") {

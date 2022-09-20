@@ -14,12 +14,13 @@ $libsdir	    = $rootdir."libs".DS;								// Directorio de Librerias Creadas
 $notierror 	= 1;
 
 /* CONFIGURACION BASE DE DATOS PRINCIPAL*/
-$hostbd = "LOCALHOST:1521/xe";
+$hostbd = "127.0.0.1";
 $tipo_server = "mysql";
 $connection_string = $hostbd;
-$userbd_oci = 'PRUEBAS';
-$passwd_oci = 'tkoxmtiymtk';
-
+$bd = 'prueba_tecnica_dev';
+$userbd = 'root';
+$passbd = '';
+$puerto_mysql = 3306;
 define("SMARTY_DIR", $includedir . "smarty" . DS . "libs" . DS);
 require(SMARTY_DIR . "Smarty.class.php");
 $smarty = new Smarty();
